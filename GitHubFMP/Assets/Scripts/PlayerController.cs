@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 public class PlayerController : MonoBehaviour
 {
     //Start() variables
@@ -26,14 +27,16 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private AudioSource jumping;
     [SerializeField] private AudioSource hurt;
     [SerializeField] private AudioSource powerup;
-
+    [SerializeField] private int health;
+    [SerializeField] private Text healthAmount;
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         coll = GetComponent<Collider2D>();
+        healthAmount.text = health.ToString();
 
-        
+
     }
     private void Update()
     {
@@ -81,8 +84,15 @@ public class PlayerController : MonoBehaviour
             }
             else
             {
-                hurt.Play();
+                hurt.Play(); // Deals with health and Updates UI if health is too low
                 state = State.hurt;
+                health -= 25;
+                healthAmount.text = health.ToString();
+                if(health <= 0)
+                {
+                    SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+                }
+
                 if (other.gameObject.transform.position.x > transform.position.x)
                 {
                     //Enemy is to my right therefore should be damaged and move left
