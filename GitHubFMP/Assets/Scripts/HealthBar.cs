@@ -21,7 +21,7 @@ public class HealthBar : MonoBehaviour
         //Check if your health is zero or less => Dead
         if (health <= 0)
         {
-            FindObjectOfType<PlayerController>().Death();
+            FindObjectOfType<LevelManager>().Restart();
         }
     }
     private void Update()

@@ -18,8 +18,8 @@ public class LevelManager : MonoBehaviour
         //Save the player's initial position when game starts
         //When respawning simply reposit the player to that init position
         //Reset the player's movement speed
-        //FindObjectOfType<Fox>().ResetPlayer();
-        //FindObjectOfType<Fox>().transform.position = playerInitPosition;
+        //FindObjectOfType<PlayerController>().ResetPlayer();
+        //FindObjectOfType<PlayerController>().transform.position = playerInitPosition;
         //Reset the life count
 
     }

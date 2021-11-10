@@ -21,11 +21,14 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Text cherryText;
     [SerializeField] private float hurtForce = 10f;
 
+    
+
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         coll = GetComponent<Collider2D>();
+        
     }
     private void Update()
     {
@@ -47,13 +50,17 @@ public class PlayerController : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D other)
     {
-        EnemyAI possum = other.gameObject.GetComponent<EnemyAI>();
+        EnemyAI Enemy = other.gameObject.GetComponent<EnemyAI>();
         
         if (other.gameObject.tag == "Enemy")
         {
+
+            EnemyAI eagle = other.gameObject.GetComponent<EnemyAI>();
+            EnemyAI possum = other.gameObject.GetComponent<EnemyAI>();
             if (state == State.fall)
             {
-                Destroy(possum.gameObject);
+                eagle.JumpedOn();
+                possum.JumpedOn();
                 Jump();
             }
             else
@@ -94,6 +101,8 @@ public class PlayerController : MonoBehaviour
         {
             Jump();
         }
+
+        
     }
     private void Jump()
     {
@@ -139,11 +148,10 @@ public class PlayerController : MonoBehaviour
         anim.SetTrigger("Death");
     }
 
-    public void Death()
+    private void Death()
     {
-        Destroy(this.gameObject);
+        Destroy(this);
     }
-
 }
 
 
