@@ -25,7 +25,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private AudioSource walking;
     [SerializeField] private AudioSource jumping;
     [SerializeField] private AudioSource hurt;
-
+    [SerializeField] private AudioSource powerup;
 
     private void Start()
     {
@@ -52,6 +52,15 @@ public class PlayerController : MonoBehaviour
             Destroy(collision.gameObject); //Cherry destroy
             cherries += 1;
             cherryText.text = cherries.ToString(); //Converting number to string
+        }
+
+        if (collision.tag == "powerup")
+        {
+            powerup.Play();
+            Destroy(collision.gameObject);
+            jumpForce = 25f;
+            GetComponent<SpriteRenderer>().color = Color.cyan;
+            StartCoroutine(ResetPower());
         }
     }
     private void OnCollisionEnter2D(Collision2D other)
@@ -157,6 +166,14 @@ public class PlayerController : MonoBehaviour
     private void Footstep()
     {
         walking.Play();
+    }
+
+
+    private IEnumerator ResetPower()
+    {
+        yield return new WaitForSeconds(7);
+        jumpForce = 11f;
+        GetComponent<SpriteRenderer>().color = Color.white;
     }
     
 }

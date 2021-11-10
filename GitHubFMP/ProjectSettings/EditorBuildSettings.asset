@@ -8,4 +8,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Game.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Congrats!.unity
+    guid: 22b2b7eeb9b47ca478067d654258a3b5
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: bb9fb5dd2c3a8e14bb28b7cea7bc21f6
+  - enabled: 1
+    path: Assets/Scenes/PauseMenu.unity
+    guid: 40e17b8623796844ea029b44cc28513a
+  - enabled: 1
+    path: Assets/Scenes/SettingsMenu.unity
+    guid: 3d2dd4fd134e35d4bb75cebe5200d97c
   m_configObjects: {}
