@@ -13,7 +13,7 @@ TagManager:
   - Ground
   - Water
   - UI
-  - 
+  - Cam Border
   - 
   - 
   - 
@@ -51,4 +51,10 @@ TagManager:
     locked: 0
   - name: Enemy
     uniqueID: 3548381457
+    locked: 0
+  - name: Background
+    uniqueID: 3676790741
+    locked: 0
+  - name: Foreground
+    uniqueID: 3964365935
     locked: 0

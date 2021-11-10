@@ -10,13 +10,15 @@ public class EnemyAI : MonoBehaviour
     int idChangeValue = 1;
     public float speed = 2;
     private Animator anim;
-
+    protected AudioSource explosion;
    
 
 
     private void Start()
     {
         anim = GetComponent<Animator>();
+        explosion = GetComponent<AudioSource>();
+
     }
 
 
@@ -89,6 +91,7 @@ public class EnemyAI : MonoBehaviour
         public void JumpedOn()
         {
             anim.SetTrigger("Death");
+            explosion.Play();
         }
 
 

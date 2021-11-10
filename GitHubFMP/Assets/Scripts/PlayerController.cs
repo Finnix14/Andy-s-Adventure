@@ -8,6 +8,7 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D rb;
     private Animator anim;
     private Collider2D coll;
+    
 
     //FSM
     private enum State { idle, run, jump, fall, hurt}
@@ -20,14 +21,18 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private int cherries = 0;
     [SerializeField] private Text cherryText;
     [SerializeField] private float hurtForce = 10f;
+    [SerializeField] private AudioSource cherry;
+    [SerializeField] private AudioSource walking;
+    [SerializeField] private AudioSource jumping;
+    [SerializeField] private AudioSource hurt;
 
-    
 
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         coll = GetComponent<Collider2D>();
+
         
     }
     private void Update()
@@ -43,6 +48,7 @@ public class PlayerController : MonoBehaviour
     {
         if (collision.tag == "Collectable")
         {
+            cherry.Play();
             Destroy(collision.gameObject); //Cherry destroy
             cherries += 1;
             cherryText.text = cherries.ToString(); //Converting number to string
@@ -59,12 +65,14 @@ public class PlayerController : MonoBehaviour
             EnemyAI possum = other.gameObject.GetComponent<EnemyAI>();
             if (state == State.fall)
             {
+                hurt.Play();
                 eagle.JumpedOn();
                 possum.JumpedOn();
                 Jump();
             }
             else
             {
+                hurt.Play();
                 state = State.hurt;
                 if (other.gameObject.transform.position.x > transform.position.x)
                 {
@@ -99,6 +107,7 @@ public class PlayerController : MonoBehaviour
         //Jumping
         if (Input.GetButtonDown("Jump") && coll.IsTouchingLayers(Ground))
         {
+            jumping.Play();
             Jump();
         }
 
@@ -106,6 +115,7 @@ public class PlayerController : MonoBehaviour
     }
     private void Jump()
     {
+        
         rb.velocity = new Vector2(rb.velocity.x, jumpForce);
         state = State.jump;
     }
@@ -143,16 +153,10 @@ public class PlayerController : MonoBehaviour
             state = State.idle;
         }
     }
-    public void JumpedOn()
+    
+    private void Footstep()
     {
-        anim.SetTrigger("Death");
+        walking.Play();
     }
-
-    private void Death()
-    {
-        Destroy(this);
-    }
+    
 }
-
-
-
