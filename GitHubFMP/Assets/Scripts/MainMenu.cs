@@ -19,7 +19,12 @@ public class MainMenu : MonoBehaviour
     }
     public void Quitting()
     {
-       
+        Application.Quit();
     }
+    public void LevelTwo()
+    {
+        SceneManager.LoadScene("LevelTwo");
+    }
+
     
 }
