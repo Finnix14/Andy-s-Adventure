@@ -174,7 +174,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2922971196522407329}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.5437293, y: -0.6091969, z: -10.612912}
+  m_LocalPosition: {x: -0.5434691, y: -0.6091969, z: -23.74}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2922971196316720762}
@@ -370,8 +370,6 @@ GameObject:
   - component: {fileID: 2922971197025904725}
   - component: {fileID: 2922971197025904724}
   - component: {fileID: 2922971197025904726}
-  - component: {fileID: 2922971197025904680}
-  - component: {fileID: 2922971197025904727}
   - component: {fileID: 2922971197025904682}
   - component: {fileID: 2922971197025904681}
   - component: {fileID: 2922971197025904683}
@@ -393,7 +391,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2922971197025904720}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.01, y: -0.66, z: 3.3870876}
+  m_LocalPosition: {x: -0.01, y: -0.66, z: -9.74}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2922971196316720762}
@@ -531,38 +529,8 @@ MonoBehaviour:
   jumping: {fileID: 2922971197025904684}
   hurt: {fileID: 2922971197025904685}
   powerup: {fileID: 2922971197025904686}
---- !u!114 &2922971197025904680
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2922971197025904720}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a7fe79a31eda1ed43a76ceca149cf51c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lives:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  livesRemaining: 4
---- !u!114 &2922971197025904727
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2922971197025904720}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 43dcf78dad927504c926f8858550e031, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Fill: {fileID: 0}
   health: 100
+  healthAmount: {fileID: 0}
 --- !u!61 &2922971197025904682
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1152,7 +1120,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2922971197323633572}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.5437293, y: -0.6091969, z: -10.612912}
+  m_LocalPosition: {x: -0.5434691, y: -0.6091969, z: -23.74}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2922971197678057338}

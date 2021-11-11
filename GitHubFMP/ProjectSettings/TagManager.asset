@@ -8,6 +8,8 @@ TagManager:
   - Enemy
   - powerup
   - MainMenuMusic
+  - MovingPlatform
+  - Grapple
   layers:
   - Default
   - TransparentFX

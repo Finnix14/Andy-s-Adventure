@@ -614,6 +614,11 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &207038006 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7840231214201163764, guid: 7e3653eb4918b6347838669a36a9d16a, type: 3}
+  m_PrefabInstance: {fileID: 7437928679877937849}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &661940910
 GameObject:
   m_ObjectHideFlags: 0
@@ -14726,7 +14731,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2922971196316720762, guid: 5bf556bbaa5207f458a78753d0ddf2d6, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -3.3870876
+      value: 8.53
       objectReference: {fileID: 0}
     - target: {fileID: 2922971196316720762, guid: 5bf556bbaa5207f458a78753d0ddf2d6, type: 3}
       propertyPath: m_LocalRotation.w
@@ -14758,7 +14763,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2922971196522407330, guid: 5bf556bbaa5207f458a78753d0ddf2d6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.54366016
+      value: -0.543653
+      objectReference: {fileID: 0}
+    - target: {fileID: 2922971196522407330, guid: 5bf556bbaa5207f458a78753d0ddf2d6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -23.74
       objectReference: {fileID: 0}
     - target: {fileID: 2922971196522407333, guid: 5bf556bbaa5207f458a78753d0ddf2d6, type: 3}
       propertyPath: near clip plane
@@ -14810,7 +14819,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2922971197323633574, guid: 5bf556bbaa5207f458a78753d0ddf2d6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.54366016
+      value: -0.543653
+      objectReference: {fileID: 0}
+    - target: {fileID: 2922971197323633574, guid: 5bf556bbaa5207f458a78753d0ddf2d6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -23.74
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2922971197025904727, guid: 5bf556bbaa5207f458a78753d0ddf2d6, type: 3}
@@ -15135,12 +15148,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7437928679858813471, guid: 7e3653eb4918b6347838669a36a9d16a, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -880
+      value: -401
       objectReference: {fileID: 0}
     - target: {fileID: 7437928679858813471, guid: 7e3653eb4918b6347838669a36a9d16a, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 477
+      value: 211.2
       objectReference: {fileID: 0}
+    - target: {fileID: 8201835264070486680, guid: 7e3653eb4918b6347838669a36a9d16a, type: 3}
+      propertyPath: isPaused
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8201835264070486680, guid: 7e3653eb4918b6347838669a36a9d16a, type: 3}
+      propertyPath: pauseMenu
+      value: 
+      objectReference: {fileID: 207038006}
     - target: {fileID: 8440033447641571281, guid: 7e3653eb4918b6347838669a36a9d16a, type: 3}
       propertyPath: m_Color.b
       value: 0.5943396
