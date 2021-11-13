@@ -12,7 +12,7 @@ public class PlayerController : MonoBehaviour
     
 
     //FSM
-    private enum State { idle, run, jump, fall, hurt}
+    private enum State { idle, run, jump, fall, hurt, crouch}
     private State state = State.idle;
 
     //Inspector variables
@@ -29,6 +29,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private AudioSource powerup;
     [SerializeField] private int health;
     [SerializeField] private Text healthAmount;
+
+    bool crouch;
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -123,14 +125,15 @@ public class PlayerController : MonoBehaviour
             rb.velocity = new Vector2(speed, rb.velocity.y);
             transform.localScale = new Vector2(1, 1);
         }
+     
         //Jumping
         if (Input.GetButtonDown("Jump") && coll.IsTouchingLayers(Ground))
         {
             jumping.Play();
             Jump();
-        }
 
-        
+        }
+       
     }
     private void Jump()
     {
@@ -185,5 +188,4 @@ public class PlayerController : MonoBehaviour
         jumpForce = 11f;
         GetComponent<SpriteRenderer>().color = Color.white;
     }
-    
 }
