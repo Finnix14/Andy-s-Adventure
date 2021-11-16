@@ -25,7 +25,7 @@ public class MainMenu : MonoBehaviour
     }
     public void LevelTwo()
     {
-        SceneManager.LoadScene("Game");
+        SceneManager.LoadScene("Level2");
     }
 
     public void LevelThree()
