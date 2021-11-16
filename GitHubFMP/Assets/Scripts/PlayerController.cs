@@ -12,7 +12,7 @@ public class PlayerController : MonoBehaviour
     
 
     //FSM
-    private enum State { idle, run, jump, fall, hurt, crouch}
+    private enum State { idle, run, jump, fall, hurt, crouch, Death}
     private State state = State.idle;
 
     //Inspector variables
@@ -64,7 +64,7 @@ public class PlayerController : MonoBehaviour
         {
             powerup.Play();
             Destroy(collision.gameObject);
-            jumpForce = 25f;
+            jumpForce = 18f;
             GetComponent<SpriteRenderer>().color = Color.cyan;
             StartCoroutine(ResetPower());
         }
@@ -76,6 +76,17 @@ public class PlayerController : MonoBehaviour
             speed = 7.5f;
             GetComponent<SpriteRenderer>().color = Color.yellow;
             StartCoroutine(ResetSpeed());
+        }
+
+        {
+            if (collision.gameObject.tag == "Spikes")
+            {
+                hurt.Play();
+                state = State.Death;
+                Destroy(collision.gameObject);
+                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            }
+
         }
     }
     private void OnCollisionEnter2D(Collision2D other)
@@ -190,7 +201,6 @@ public class PlayerController : MonoBehaviour
     {
         walking.Play();
     }
-
 
     private IEnumerator ResetPower()
     {

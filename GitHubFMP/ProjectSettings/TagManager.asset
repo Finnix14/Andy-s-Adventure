@@ -11,6 +11,7 @@ TagManager:
   - MovingPlatform
   - Grapple
   - speedup
+  - Spikes
   layers:
   - Default
   - TransparentFX
