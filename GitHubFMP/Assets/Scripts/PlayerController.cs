@@ -27,6 +27,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private AudioSource jumping;
     [SerializeField] private AudioSource hurt;
     [SerializeField] private AudioSource powerup;
+    [SerializeField] private AudioSource speedup;
     [SerializeField] private int health;
     [SerializeField] private Text healthAmount;
 
@@ -66,6 +67,15 @@ public class PlayerController : MonoBehaviour
             jumpForce = 25f;
             GetComponent<SpriteRenderer>().color = Color.cyan;
             StartCoroutine(ResetPower());
+        }
+
+        if (collision.tag == "speedup")
+        {
+            speedup.Play();
+            Destroy(collision.gameObject);
+            speed = 7.5f;
+            GetComponent<SpriteRenderer>().color = Color.yellow;
+            StartCoroutine(ResetSpeed());
         }
     }
     private void OnCollisionEnter2D(Collision2D other)
@@ -188,4 +198,11 @@ public class PlayerController : MonoBehaviour
         jumpForce = 11f;
         GetComponent<SpriteRenderer>().color = Color.white;
     }
+    private IEnumerator ResetSpeed()
+    {
+        yield return new WaitForSeconds(7);
+        speed = 6f;
+        GetComponent<SpriteRenderer>().color = Color.white;
+    }
+
 }

@@ -15,12 +15,18 @@ EditorBuildSettings:
     path: Assets/Scenes/PauseMenu.unity
     guid: 40e17b8623796844ea029b44cc28513a
   - enabled: 1
-    path: Assets/Scenes/Game.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: Assets/Scenes/Tutorial Level.unity
+    guid: cde5ea49f73f6fd4b8f873973380476a
   - enabled: 1
     path: Assets/Scenes/Congrats!.unity
     guid: 22b2b7eeb9b47ca478067d654258a3b5
   - enabled: 1
-    path: Assets/Scenes/LevelTwo.unity
+    path: Assets/Scenes/Game.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Level2Congrats!.unity
+    guid: 438340610d2eb1b4bb2c06212c2f0c68
+  - enabled: 1
+    path: Assets/Scenes/LevelThree.unity
     guid: 44992db8fe94b6e4087cddd6c9678eea
   m_configObjects: {}

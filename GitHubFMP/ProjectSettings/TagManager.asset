@@ -10,6 +10,7 @@ TagManager:
   - MainMenuMusic
   - MovingPlatform
   - Grapple
+  - speedup
   layers:
   - Default
   - TransparentFX
@@ -18,7 +19,7 @@ TagManager:
   - Water
   - UI
   - Cam Border
-  - 
+  - Player
   - 
   - 
   - 

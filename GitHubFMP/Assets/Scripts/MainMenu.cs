@@ -6,7 +6,7 @@ public class MainMenu : MonoBehaviour
 {
     public void PlayGame()
     {
-        SceneManager.LoadScene("Game");
+        SceneManager.LoadScene("Tutorial Level");
     }
 
 
@@ -25,7 +25,12 @@ public class MainMenu : MonoBehaviour
     }
     public void LevelTwo()
     {
-        SceneManager.LoadScene("LevelTwo");
+        SceneManager.LoadScene("Game");
+    }
+
+    public void LevelThree()
+    {
+        SceneManager.LoadScene("LevelThree");
     }
 
     
