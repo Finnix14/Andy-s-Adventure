@@ -9,11 +9,10 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D rb;
     private Animator anim;
     private Collider2D coll;
-    private HingeJoint2D hj;
+    
 
-    public bool attatched = false;
-    public Transform attatchedTo;
-    private GameObject disregard;
+    
+    
     
 
     //FSM
@@ -42,7 +41,6 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         coll = GetComponent<Collider2D>();
-        hj = gameObject.GetComponent<HingeJoint2D>();
         healthAmount.text = health.ToString();
 
 

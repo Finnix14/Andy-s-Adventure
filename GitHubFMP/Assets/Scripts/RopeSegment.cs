@@ -17,7 +17,7 @@ public class RopeSegment : MonoBehaviour
     {
         connectedAbove = GetComponent<HingeJoint2D>().connectedBody.gameObject;
         RopeSegment aboveSegment = connectedAbove.GetComponent<RopeSegment>();
-        if(aboveSegment != null)
+        if (aboveSegment != null)
         {
             aboveSegment.connectedBelow = gameObject;
             float spriteBottom = connectedAbove.GetComponent<SpriteRenderer>().bounds.size.y;
@@ -28,4 +28,5 @@ public class RopeSegment : MonoBehaviour
             GetComponent<HingeJoint2D>().connectedAnchor = new Vector2(0, 0);
         }
     }
+ 
 }
