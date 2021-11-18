@@ -1,6 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using System.Collections;
 
 public class GrapplingGun : MonoBehaviour
 {
@@ -11,7 +10,7 @@ public class GrapplingGun : MonoBehaviour
     void Start()
     {
         gameObject.AddComponent<LineRenderer>();
-        gameObject.AddComponent<Rigidbody2D>();
+  
     }
 
     void Update()

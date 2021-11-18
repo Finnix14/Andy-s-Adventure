@@ -12,6 +12,7 @@ TagManager:
   - Grapple
   - speedup
   - Spikes
+  - Rope
   layers:
   - Default
   - TransparentFX
@@ -21,7 +22,7 @@ TagManager:
   - UI
   - Cam Border
   - Player
-  - 
+  - Grappleable
   - 
   - 
   - 
