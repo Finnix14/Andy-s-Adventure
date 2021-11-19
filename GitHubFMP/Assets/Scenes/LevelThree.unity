@@ -14489,8 +14489,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23592455c33ea8749abb1e80c9da1a02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attatched: 0
-  attatchedTo: {fileID: 0}
   Ground:
     serializedVersion: 2
     m_Bits: 8
@@ -14541,7 +14539,6 @@ GameObject:
   - component: {fileID: 2922971197122172376}
   - component: {fileID: 2922971197122172379}
   - component: {fileID: 440876535}
-  - component: {fileID: 2922971197122172328}
   m_Layer: 0
   m_Name: Fox
   m_TagString: Player
@@ -14619,21 +14616,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &2922971197122172328
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2922971197122172325}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1ce6f4573677975409ec275cb8dc6465, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  grabDetect: {fileID: 0}
-  ropeHolder: {fileID: 0}
-  rayDist: 2
 --- !u!82 &2922971197122172376
 AudioSource:
   m_ObjectHideFlags: 0
@@ -16514,7 +16496,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2006621885346975079}
-  m_BodyType: 2
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
