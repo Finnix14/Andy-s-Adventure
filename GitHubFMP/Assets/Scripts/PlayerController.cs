@@ -92,6 +92,7 @@ public class PlayerController : MonoBehaviour
             }
 
         }
+
     }
     private void OnCollisionEnter2D(Collision2D other)
     {
@@ -131,7 +132,7 @@ public class PlayerController : MonoBehaviour
                     rb.velocity = new Vector2(hurtForce, rb.velocity.y);
                 }
             }
-
+          
         }
     }
     private void Movement()
@@ -200,7 +201,7 @@ public class PlayerController : MonoBehaviour
             state = State.idle;
         }
     }
-    
+
     private void Footstep()
     {
         walking.Play();
