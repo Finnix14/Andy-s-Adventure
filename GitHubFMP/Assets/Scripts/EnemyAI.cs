@@ -18,7 +18,6 @@ public class EnemyAI : MonoBehaviour
     {
         anim = GetComponent<Animator>();
         explosion = GetComponent<AudioSource>();
-
     }
 
 

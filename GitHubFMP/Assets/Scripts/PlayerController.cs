@@ -91,18 +91,21 @@ public class PlayerController : MonoBehaviour
                 SceneManager.LoadScene(SceneManager.GetActiveScene().name);
             }
 
+
         }
 
     }
     private void OnCollisionEnter2D(Collision2D other)
     {
         EnemyAI Enemy = other.gameObject.GetComponent<EnemyAI>();
+
         
         if (other.gameObject.tag == "Enemy")
         {
 
             EnemyAI eagle = other.gameObject.GetComponent<EnemyAI>();
             EnemyAI possum = other.gameObject.GetComponent<EnemyAI>();
+
             if (state == State.fall)
             {
                 hurt.Play();
@@ -116,7 +119,7 @@ public class PlayerController : MonoBehaviour
                 state = State.hurt;
                 health -= 25;
                 healthAmount.text = health.ToString();
-                if(health <= 0)
+                if (health <= 0)
                 {
                     SceneManager.LoadScene(SceneManager.GetActiveScene().name);
                 }
@@ -126,11 +129,39 @@ public class PlayerController : MonoBehaviour
                     //Enemy is to my right therefore should be damaged and move left
                     rb.velocity = new Vector2(-hurtForce, rb.velocity.y);
                 }
+                if (other.gameObject.tag == "EnemyAI")
+                {
+                    if (state == State.fall)
+                    {
+                        hurt.Play();
+                        eagle.JumpedOn();
+                        possum.JumpedOn();
+                        Jump();
+                    }
+                    else
+                    {
+                        hurt.Play(); // Deals with health and Updates UI if health is too low
+                        state = State.hurt;
+                        health -= 25;
+                        healthAmount.text = health.ToString();
+                        if (health <= 0)
+                        {
+                            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+                        }
+                         else
+                {
+                    //Enemy is to my left therefore i Should be damaged and move right
+                    rb.velocity = new Vector2(hurtForce, rb.velocity.y);
+                }
+                    }
+
+                }
                 else
                 {
                     //Enemy is to my left therefore i Should be damaged and move right
                     rb.velocity = new Vector2(hurtForce, rb.velocity.y);
                 }
+                
             }
           
         }

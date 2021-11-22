@@ -2,15 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Pathfinding;
+using UnityEngine.SceneManagement;
 
 public class EnemyGFX : MonoBehaviour
 {
     public AIPath aiPath;
     AudioSource explosion;
     Animator anim;
+    
+    
 
     private void Start()
     {
+        anim = GetComponent<Animator>();
         anim = GetComponent<Animator>();
     }
 
@@ -25,7 +29,6 @@ public class EnemyGFX : MonoBehaviour
             transform.localScale = new Vector3(1f, 1f, 1f);
         }
     }
-
     public void JumpedOn()
     {
         anim.SetTrigger("DeathAI");
@@ -38,3 +41,4 @@ public class EnemyGFX : MonoBehaviour
         Destroy(this.gameObject);
     }
 }
+ 
