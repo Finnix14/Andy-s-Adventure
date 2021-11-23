@@ -33,5 +33,9 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene("LevelThree");
     }
 
+    public void FinalLevel()
+    {
+        SceneManager.LoadScene("FinalLevel");
+    }
     
 }
