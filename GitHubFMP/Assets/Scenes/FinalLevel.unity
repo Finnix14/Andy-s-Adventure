@@ -169,6 +169,7 @@ GameObject:
   - component: {fileID: 74277315}
   - component: {fileID: 74277314}
   - component: {fileID: 74277313}
+  - component: {fileID: 74277318}
   m_Layer: 0
   m_Name: Eagle
   m_TagString: Enemy
@@ -210,7 +211,7 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
+  MinDistance: 1.0292397
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
@@ -316,7 +317,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.04127121, y: -0.19945794}
+  m_Offset: {x: -0.10631803, y: 0.01758504}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -327,7 +328,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.19738, y: 1.7784237}
+  m_Size: {x: 1.1729372, y: 1.3443377}
   m_EdgeRadius: 0
 --- !u!95 &74277316
 Animator:
@@ -399,6 +400,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!58 &74277318
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 74277311}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 6200000, guid: c185b43eed77a3247bd46f069f7e9d83, type: 2}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.14900796, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.93790436
 --- !u!1 &145519683
 GameObject:
   m_ObjectHideFlags: 0
@@ -413,6 +430,7 @@ GameObject:
   - component: {fileID: 145519687}
   - component: {fileID: 145519686}
   - component: {fileID: 145519685}
+  - component: {fileID: 145519690}
   m_Layer: 0
   m_Name: Eagle
   m_TagString: Enemy
@@ -454,7 +472,7 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
+  MinDistance: 1.0292435
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
@@ -560,7 +578,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.04127121, y: -0.19945794}
+  m_Offset: {x: -0.21049598, y: -0.19945794}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -571,7 +589,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.19738, y: 1.7784237}
+  m_Size: {x: 1.6938457, y: 1.7784237}
   m_EdgeRadius: 0
 --- !u!95 &145519688
 Animator:
@@ -643,6 +661,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!58 &145519690
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 145519683}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 6200000, guid: c185b43eed77a3247bd46f069f7e9d83, type: 2}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.12309155, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.9378993
 --- !u!1 &152523739
 GameObject:
   m_ObjectHideFlags: 0
@@ -1435,6 +1469,7 @@ GameObject:
   - component: {fileID: 544477804}
   - component: {fileID: 544477803}
   - component: {fileID: 544477802}
+  - component: {fileID: 544477807}
   m_Layer: 0
   m_Name: Eagle
   m_TagString: Enemy
@@ -1582,7 +1617,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.04127121, y: -0.19945794}
+  m_Offset: {x: -0.17577487, y: 0.026266605}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1593,7 +1628,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.19738, y: 1.7784237}
+  m_Size: {x: 1.2423958, y: 1.3269746}
   m_EdgeRadius: 0
 --- !u!95 &544477805
 Animator:
@@ -1665,6 +1700,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!58 &544477807
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 544477800}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 6200000, guid: c185b43eed77a3247bd46f069f7e9d83, type: 2}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.032391712, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.86017036
 --- !u!1 &555811916
 GameObject:
   m_ObjectHideFlags: 0
@@ -2517,6 +2568,7 @@ GameObject:
   - component: {fileID: 762311030}
   - component: {fileID: 762311029}
   - component: {fileID: 762311028}
+  - component: {fileID: 762311033}
   m_Layer: 0
   m_Name: Eagle
   m_TagString: Enemy
@@ -2558,7 +2610,7 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
+  MinDistance: 0.9580412
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
@@ -2664,7 +2716,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.04127121, y: -0.19945794}
+  m_Offset: {x: -0.01950571, y: -0.12132251}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -2675,7 +2727,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.19738, y: 1.7784237}
+  m_Size: {x: 1.2076664, y: 1.6221528}
   m_EdgeRadius: 0
 --- !u!95 &762311031
 Animator:
@@ -2747,6 +2799,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!58 &762311033
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 762311026}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 6200000, guid: c185b43eed77a3247bd46f069f7e9d83, type: 2}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.08365662, y: 0.005576833}
+  serializedVersion: 2
+  m_Radius: 0.8350551
 --- !u!1 &935815328
 GameObject:
   m_ObjectHideFlags: 0
@@ -25864,7 +25932,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.52334034, y: 0}
+  m_Offset: {x: 0.4375887, y: 0.16672376}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -25875,7 +25943,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.035782, y: 1}
+  m_Size: {x: 1.1139228, y: 0.6665525}
   m_EdgeRadius: 0
 --- !u!50 &5320091423525111472
 Rigidbody2D:

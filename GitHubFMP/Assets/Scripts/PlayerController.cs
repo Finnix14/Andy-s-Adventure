@@ -9,15 +9,19 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D rb;
     private Animator anim;
     private Collider2D coll;
-    
 
-    
-    
-    
+
+
+
+
 
     //FSM
-    private enum State { idle, run, jump, fall, hurt, crouch, Death}
+    private enum State { idle, run, jump, fall, hurt, crouch, Death, climb}
     private State state = State.idle;
+
+
+
+
 
     //Inspector variables
     [SerializeField] private LayerMask Ground;
@@ -35,18 +39,20 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private int health;
     [SerializeField] private Text healthAmount;
 
-    bool crouch;
+    
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         coll = GetComponent<Collider2D>();
         healthAmount.text = health.ToString();
+ 
 
 
     }
     private void Update()
     {
+
         if (state != State.hurt)
         {
             Movement();
@@ -168,8 +174,9 @@ public class PlayerController : MonoBehaviour
     }
     private void Movement()
     {
+        
         float hDirection = Input.GetAxis("Horizontal");
-
+      
         //Moving left
         if (hDirection < 0)
         {
@@ -200,6 +207,7 @@ public class PlayerController : MonoBehaviour
     }
     private void AnimationState()
     {
+        
         if (state == State.jump)
         {
             if (rb.velocity.y < .1f)
@@ -250,5 +258,7 @@ public class PlayerController : MonoBehaviour
         speed = 6f;
         GetComponent<SpriteRenderer>().color = Color.white;
     }
+
+
 
 }
