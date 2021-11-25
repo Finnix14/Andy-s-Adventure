@@ -174,9 +174,8 @@ public class PlayerController : MonoBehaviour
     }
     private void Movement()
     {
-        
         float hDirection = Input.GetAxis("Horizontal");
-      
+
         //Moving left
         if (hDirection < 0)
         {
@@ -189,7 +188,7 @@ public class PlayerController : MonoBehaviour
             rb.velocity = new Vector2(speed, rb.velocity.y);
             transform.localScale = new Vector2(1, 1);
         }
-     
+
         //Jumping
         if (Input.GetButtonDown("Jump") && coll.IsTouchingLayers(Ground))
         {
@@ -197,8 +196,9 @@ public class PlayerController : MonoBehaviour
             Jump();
 
         }
-       
+
     }
+
     private void Jump()
     {
         
