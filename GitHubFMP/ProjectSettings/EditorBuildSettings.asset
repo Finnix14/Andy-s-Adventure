@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/MenuScene/SplashScreen.unity
+    guid: 1313718af59326142a62dd76ab2bc2fc
+  - enabled: 1
     path: Assets/Scenes/MenuScene/MainMenu.unity
     guid: bb9fb5dd2c3a8e14bb28b7cea7bc21f6
   - enabled: 1
@@ -42,6 +45,6 @@ EditorBuildSettings:
     path: Assets/Scenes/CongratsScenes/Credits.unity
     guid: 6b54c925f45690841a474b6cf482186b
   - enabled: 1
-    path: Assets/Scenes/SurpriseScene/RIckRoll.unity
+    path: Assets/Scenes/SurpriseScene/RickRoll.unity
     guid: 57e5907a578118c4e9a57eb26591960b
   m_configObjects: {}
