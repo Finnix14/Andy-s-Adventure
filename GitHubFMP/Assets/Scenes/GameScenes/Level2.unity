@@ -22833,7 +22833,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6560554422990640097, guid: 7e3653eb4918b6347838669a36a9d16a, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -40.29718
+      value: -40.29712
       objectReference: {fileID: 0}
     - target: {fileID: 6560554422990640097, guid: 7e3653eb4918b6347838669a36a9d16a, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -23024,12 +23024,36 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7437928679858813471, guid: 7e3653eb4918b6347838669a36a9d16a, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7437928679858813471, guid: 7e3653eb4918b6347838669a36a9d16a, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7437928679858813471, guid: 7e3653eb4918b6347838669a36a9d16a, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7437928679858813471, guid: 7e3653eb4918b6347838669a36a9d16a, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7437928679858813471, guid: 7e3653eb4918b6347838669a36a9d16a, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 83.58325
+      objectReference: {fileID: 0}
+    - target: {fileID: 7437928679858813471, guid: 7e3653eb4918b6347838669a36a9d16a, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 83.58325
+      objectReference: {fileID: 0}
+    - target: {fileID: 7437928679858813471, guid: 7e3653eb4918b6347838669a36a9d16a, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -895
+      value: 70
       objectReference: {fileID: 0}
     - target: {fileID: 7437928679858813471, guid: 7e3653eb4918b6347838669a36a9d16a, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 478
+      value: -57
       objectReference: {fileID: 0}
     - target: {fileID: 8201835264070486680, guid: 7e3653eb4918b6347838669a36a9d16a, type: 3}
       propertyPath: isPaused
