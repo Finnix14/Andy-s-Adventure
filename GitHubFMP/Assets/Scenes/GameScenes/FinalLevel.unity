@@ -835,7 +835,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &187474522
 GameObject:
@@ -1282,7 +1282,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &385448308
 GameObject:
@@ -5053,7 +5053,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1341589940
 GameObject:
@@ -5419,12 +5419,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1451598284}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 127.09, y: -9.42, z: 0}
+  m_LocalPosition: {x: 67.75, y: -0.8199997, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 709301254}
-  m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_Father: {fileID: 2910166760504486217}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!58 &1451598289
 CircleCollider2D:
@@ -25108,6 +25108,7 @@ Transform:
   - {fileID: 1797478749}
   - {fileID: 1021976158}
   - {fileID: 465907876}
+  - {fileID: 1451598288}
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -25929,7 +25930,7 @@ MonoBehaviour:
   jumping: {fileID: 2922971197706009622}
   hurt: {fileID: 2922971197706009623}
   powerup: {fileID: 2922971197706009620}
-  speedup: {fileID: 2922971197706009619}
+  speedup: {fileID: 2922971197706009709}
   health: 100
   healthAmount: {fileID: 294488980}
 --- !u!82 &2922971197706009709
@@ -26210,7 +26211,7 @@ Transform:
   - {fileID: 2922971198007619992}
   - {fileID: 385448309}
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2922971198339123779
 GameObject:
@@ -26268,7 +26269,7 @@ SpriteRenderer:
   m_SortingLayerID: -330601361
   m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: bd59bf2e866ed4529ae645637eb9c11d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b414f6cfcc3f63d4199469ff33bc0fac, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -26580,7 +26581,7 @@ Transform:
   - {fileID: 5320091422485516598}
   - {fileID: 5320091423498990288}
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -99.956}
 --- !u!1 &5320091422263983788
 GameObject:
