@@ -4,13 +4,7 @@ using UnityEngine;
 
 public class StickyPlatform : MonoBehaviour
 {
-    
-    
-    
-    
-    
-    
-    
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.name == "Fox") //change to whatever your player is
