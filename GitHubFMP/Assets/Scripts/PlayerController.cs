@@ -75,7 +75,7 @@ public class PlayerController : MonoBehaviour
             powerup.Play();
             Destroy(collision.gameObject);
             jumpForce = 18f;
-            GetComponent<SpriteRenderer>().color = Color.cyan;
+            GetComponent<SpriteRenderer>().color = Color.red;
             StartCoroutine(ResetPower());
         }
 
