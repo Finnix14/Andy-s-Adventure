@@ -1829,7 +1829,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 282159036}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
-        m_MethodName: LevelTwo
+        m_MethodName: ChristmasLevel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

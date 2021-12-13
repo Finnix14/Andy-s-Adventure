@@ -37,5 +37,10 @@ public class MainMenu : MonoBehaviour
     {
         SceneManager.LoadScene("FinalLevel");
     }
+
+    public void ChristmasLevel()
+    {
+        SceneManager.LoadScene("Christmas");
+    }
     
 }
