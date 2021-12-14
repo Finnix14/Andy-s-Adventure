@@ -13832,7 +13832,7 @@ GameObject:
   - component: {fileID: 816286699}
   - component: {fileID: 816286698}
   m_Layer: 0
-  m_Name: jumpup
+  m_Name: jumpupTutorial
   m_TagString: powerup
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13888,7 +13888,7 @@ Animator:
   m_GameObject: {fileID: 816286696}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2174911ad2d619a488e9f051f5794082, type: 2}
+  m_Controller: {fileID: 9100000, guid: 0ba58bdd95088494d91240c389485599, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -24887,7 +24887,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f4580d7528e4dc4cae811264fd16f98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: ChristmasCongrats
+  sceneName: Congrats!
 --- !u!212 &7389424865803070723
 SpriteRenderer:
   m_ObjectHideFlags: 0
